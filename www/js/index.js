@@ -23,9 +23,9 @@ $(document).on('pageinit', function() {
 function createMessage(){		
 	//phoneGap and jQueryMobile do not support toast messages directly
     //so we can add this using toast.js
-    new Toast({content: 'woof', duration: 1000000}); 	
- new Toast({content: 'woof', duration: 1000}); 	
- new Toast({content: 'woof', duration: 50000}); 	
+  //  new Toast({content: 'woof', duration: 1000000}); 	
+    new Toast({content: 'woof', duration: 1000}); 	
+ //new Toast({content: 'woof', duration: 50000}); 	
 }
         	
 
@@ -35,10 +35,10 @@ function createDialog() {
 	//here's a simple example
       
 	navigator.notification.confirm(
-    	'What do you think of this dialog?',  // message
+    	'Yo need a break fam?',  // message
         dialogDismissed,         // callback
         'An example dialog!',            // title
-        ['Awesome!', 'Sucks']                  // buttons
+        ['toastmang', 'nahkeepgoinholmes']                  // buttons
     );
 
 }
@@ -47,8 +47,8 @@ function createDialog() {
         	
 function dialogDismissed(buttonIndex) {
 	
-	if(buttonIndex==1) new Toast({content: "You're easily pleased", duration: 3000});
-   	else if(buttonIndex==2) new Toast({content: 'It is rather boring.', duration: 3000});
+	if(buttonIndex==1) new Toast({content: "yeah boi", duration: 3000});
+   	else if(buttonIndex==2) new Toast({content: 'smh fam', duration: 3000});
 
 }
 
