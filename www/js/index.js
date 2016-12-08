@@ -35,10 +35,10 @@ function createDialog() {
 	//here's a simple example
       
 	navigator.notification.confirm(
-    	'Yo need a break fam?',  // message
+    	'Yo need a break?',  // message
         dialogDismissed,         // callback
-        'An example dialog!',            // title
-        ['toastmang', 'nahkeepgoinholmes']                  // buttons
+        'uh',            // title
+        ['toast!', 'nah keep goin']                  // buttons
     );
 
 }
